@@ -38,7 +38,10 @@ $(function () {
                     var jqxhr2 = $.ajax({
                         url: 'https://randomuser.me/api/',
                         method: "get",
-                        dataType : "json"
+                        dataType : "json",
+                        data: {
+                            "results":1
+                        }
                     });
                     jqxhr2.done(function (datos) {
                         var listaPersonas = data["results"];
