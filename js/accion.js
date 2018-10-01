@@ -34,9 +34,7 @@ $(function () {
                     $("#contenido").append(texto);
                 }
                 $(".fila").on("click",function (e) {
-                    $(this).css({
-                        "display":"none"
-                    });
+                    $(this).remove()
                 })
             })
             .fail(function (jxhr, textStatus) {
